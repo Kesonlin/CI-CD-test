@@ -1,0 +1,1451 @@
+/* 字体图标声明 */
+
+/* 注意路径变化 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?upjzkn');
+    src: url('../fonts/icomoon.eot?upjzkn#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?upjzkn') format('truetype'), url('../fonts/icomoon.woff?upjzkn') format('woff'), url('../fonts/icomoon.svg?upjzkn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 1、头部部分开始 */
+
+.w {
+    margin: 0 auto;
+    width: 1460px;
+    min-width: 1460px;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+    /*  提高层级 */
+    top: 0;
+    width: 100%;
+    height: 190px;
+    min-width: 1460px;
+    background-color: #fff;
+}
+
+header .first {
+    width: 100%;
+    height: 90px;
+    background-color: #ff7c56;
+}
+
+header .first a {
+    display: block;
+    margin: 0 auto;
+    width: 1315px;
+    min-width: 1315px;
+    height: 90px;
+    background: url('../images/header-first.gif') no-repeat;
+}
+
+header .first a span {
+    float: left;
+    color: #fff;
+}
+
+header .first a span .word1 {
+    padding-top: 8px;
+    margin-left: 365px;
+    font-size: 20px;
+}
+
+header .first a span .word2 {
+    margin-left: 260px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+header .first a .price {
+    position: relative;
+}
+
+header .first a .price .one {
+    position: absolute;
+    top: 10px;
+    right: 315px;
+    font-size: 13px;
+    color: #212121;
+}
+
+header .first a .price .one del {
+    text-decoration-color: #ff7248;
+}
+
+header .first a .price .two {
+    position: absolute;
+    top: 20px;
+    right: 395px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff7248;
+}
+
+header .first a .price .three {
+    position: absolute;
+    top: 15px;
+    right: 320px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #ff7248;
+}
+
+header .first a .price .four {
+    position: absolute;
+    top: 57px;
+    right: 290px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #212121;
+}
+
+header .first a .support {
+    float: right;
+    margin-top: 18px;
+    margin-right: 20px;
+    width: 155px;
+    height: 45px;
+    border-radius: 8px;
+    color: #ff7c56;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    background-color: #fff;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+header .logo .left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .logo .left a {
+    width: 121px;
+    height: 34px;
+}
+
+header .logo .left a img {
+    width: 101px;
+    height: 28px;
+}
+
+header .logo .left .search {
+    position: relative;
+    width: 303px;
+    height: 34px;
+}
+
+header .logo .left .search i {
+    position: absolute;
+    width: 45px;
+    height: 34px;
+    line-height: 38px;
+    border-radius: 6px 0 0 6px;
+    background-color: #f4f6f9;
+}
+
+header .logo .left .search i::before {
+    font-family: 'icomoon';
+    content: '\e901';
+    line-height: 34px;
+    margin-left: 8px;
+}
+
+header .logo .left .search input {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    width: 190px;
+    height: 34px;
+    font-size: 15px;
+    color: rgb(132, 143, 143);
+    background-color: #f4f6f9;
+}
+
+header .logo .left .search button {
+    position: absolute;
+    margin-left: 231px;
+    width: 68px;
+    height: 34px;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    background-color: #3930D8;
+}
+
+header .logo .left .download {
+    display: block;
+    margin-left: 10px;
+    width: 80px;
+    height: 34px;
+    border: 1px solid #3930D8;
+    border-radius: 6px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #3930D8;
+}
+
+header .logo .left .download:hover {
+    background-color: #f6f9fc;
+}
+
+/* 右半部分 */
+
+header .logo .right .unhid>li {
+    float: left;
+    line-height: 34px;
+    box-sizing: border-box;
+    /* 用左右内边距挤大盒子 */
+    padding: 0 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header .logo .right .unhid>li a {
+    font-size: 14px;
+    color: #333;
+}
+
+header .logo .right .unhid>li:nth-child(4) {
+    position: relative;
+    /* 使用相对定位才能居中显示 */
+    top: 0px;
+    font-weight: 700;
+}
+
+header .logo .right .unhid>li:hover {
+    background-color: #f6f9fc;
+}
+
+header .logo .right .unhid>li:nth-child(3) a {
+    color: #fff;
+}
+
+header .logo .right .unhid>li:nth-child(3) {
+    /* 根据继承性给第三个a设置样式，防止继承了Li的一些样式*/
+    width: 119px;
+    height: 34px;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #3930D8;
+}
+
+header .logo .right .unhid>li:nth-child(4) ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    border: 1px solid #f2f2f2;
+    background-color: #fff;
+}
+
+/* header .logo .right .unhid>li:nth-child(4):hover .hid {
+    display: block;
+} */
+
+header .logo .right .hid {
+    width: 170px;
+    height: 115px;
+    box-shadow: 0 0 20px -10px;
+}
+
+header .logo .right .hid li {
+    width: 100%;
+    font-size: 16px;
+    text-align: start;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+header .logo .right .hid li:first-child {
+    margin-top: 8px;
+}
+
+header .logo .right .hid li:hover {
+    background-color: #f6f9fc;
+}
+
+/* 第三部分开始 */
+
+nav .unhid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 1050px;
+}
+
+nav .unhid>li a {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+nav .unhid>li>a:hover {
+    /* 增加权重 */
+    color: #5048db;
+}
+
+/* 导航栏隐藏部分 */
+
+nav .unhid>li {
+    position: relative;
+}
+
+nav .unhid>li .hid {
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: -20px;
+    width: 160px;
+    height: 130px;
+    box-shadow: 0 0 20px -10px;
+    background-color: #fff;
+}
+
+nav .unhid>li .hid li:first-child {
+    margin-top: 3px;
+}
+
+nav .unhid>li .hid li {
+    padding: 5px 0px 5px 25px;
+    width: 100%;
+}
+
+/* nav .unhid>li .hid li:hover {
+    background-color: #f6f9fc;
+} */
+
+/* 头部部分结束 */
+
+/* 2、Banner部分开始 */
+
+.box {
+    margin-top: 190px;
+    width: 100%;
+    max-width: 2020px;
+    height: 350.45px;
+    border-top: 1px solid #edeeef;
+    border-bottom: 1px solid #edeeef;
+}
+
+.box .banner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.banner .one {
+    position: relative;
+    overflow: hidden;
+    width: 865px;
+    height: 294px;
+}
+
+/* 轮播图制作 */
+
+.banner .one ul {
+    display: flex;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 500%;
+    height: 100%;
+}
+.banner .one ul li {
+    width: 865px;
+    height: 294px;
+}
+.banner .one a img {
+    width: 865px;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.banner .one>div:hover {
+    cursor: pointer;
+}
+
+.banner .one .arrow-l, .banner .one .arrow-r {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  /* 居中对齐 */
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    color: #0f82ff;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+.banner .one .arrow-l {
+    left: 0;
+}
+
+.banner .one .arrow-r {
+    right: 10px;
+}
+
+.banner .one .arrow-l::before {
+    font-family: 'icomoon';
+    content: '\e907';
+}
+
+.banner .one .arrow-r::before {
+    font-family: 'icomoon';
+    content: '\e908';
+}
+
+.banner .one .circle {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.banner .one .circle li {
+    display: inline-block;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* background-color: #2d2d2d; */
+    background-color: skyblue;
+}
+
+.banner .one .circle li:hover {
+    cursor: pointer;
+}
+
+.banner .one .circle .current {
+    /* background-color: #3930d8; */
+    background-color: red;
+}
+
+/* 轮播图制作结束 */
+
+.banner .two {
+    width: 560px;
+    height: 294.52px;
+}
+
+.box .banner .two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.box .banner .two span {
+    width: 264.64px;
+    height: 135.73px;
+}
+
+.box .banner .two span img {
+    width: 264.64px;
+    border-radius: 6%;
+}
+
+/* banner部分结束 */
+
+/* 3、box2部分开始 */
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 195px;
+}
+
+.box2 span {
+    width: 264px;
+    height: 135px;
+}
+
+.box2 span a img {
+    width: 264px;
+    height: 135px;
+    border-radius: 5%;
+}
+
+/* box2部分结束 */
+
+.bgc {
+    width: 100%;
+    background-color: #f4f6f9;
+}
+
+/* 4、app-sort部分开始 */
+
+.app-sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 117px;
+}
+
+.app-sort .one {
+    height: 33px;
+    font-size: 32px;
+}
+
+.app-sort .two {
+    display: flex;
+    justify-content: flex-start;
+    height: 38px;
+}
+
+.app-sort .two>div {
+    position: relative;
+    margin-right: 40px;
+    width: 68px;
+    height: 38px;
+}
+
+.app-sort .two div a img {
+    width: 68px;
+    height: 38px;
+}
+
+.app-sort .two .sort-div:hover {
+    top: -2px;
+    opacity: .8;
+    /* 注意，给父盒子设置透明度会使子盒子也会有透明度 */
+    box-shadow: 1px 1px 20px -10px;
+    z-index: 4;
+}
+
+.app-sort .two .sort-hid {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    height: 35px;
+    box-sizing: content-box;
+    /* 设置内边距挤大盒子 */
+    padding: 0 9px;
+    border-radius: 6px;
+    color: #a1a7b7;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgba(48, 51, 60);
+}
+
+/* app-sort部分结束 */
+
+/* 5、content部分开始 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 产品products部分开始 */
+
+.content .products {
+    width: 1085px;
+    height: 9100px;
+}
+
+.content .products .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: 1480px;
+}
+
+.content .products .one .first {
+    margin-bottom: 12px;
+    width: 100%;
+    height: 34px;
+}
+
+.content .products .one .first .word1 {
+    font-size: 24px;
+    color: #2d2d2d;
+}
+
+.content .products .one .first .word2 {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #a2a8b1;
+}
+
+.content .products .one .second {
+    width: 100%;
+    height: 1396px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .products .one .second>div {
+    width: 338px;
+    height: 320px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.content .products .one .second .picture a {
+    overflow: hidden;
+    /* 使用overflow属性时必须为块级元素 */
+    display: block;
+    width: 338px;
+    height: 254px;
+}
+
+.content .products .one .second .picture a img {
+    width: 100%;
+    height: 254px;
+    border-radius: 4px;
+    transition: all .5s;
+    /* 过渡 */
+}
+
+.content .products .one .second .picture a img:hover {
+    cursor: zoom-in;
+    transform: scale(1.05);
+}
+
+.content .products .one .second>div>a {
+    display: block;
+    margin: 10px 0 5px 15px;
+    font-size: 14px;
+    color: #2D2D2D;
+}
+
+.content .products .one .second>div>a:hover {
+    color: #3930d8;
+    text-decoration: underline;
+    /* 重新设置下划线 */
+}
+
+.content .products .one .second .little-icon>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.content .products .one .second .little-icon>div a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.content .products .one .second .little-icon a img {
+    width: 20px;
+    height: 20px;
+    vertical-align: baseline;
+}
+
+.content .products .one .second>div:hover {
+    box-shadow: 0 1px 30px -15px;
+}
+
+.content .vip {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: #ffa800;
+}
+
+.content .vip img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 隐藏部分，鼠标经过时才出现*/
+
+.content .products .one .second .picture {
+    position: relative;
+    overflow: hidden;
+}
+
+.content .products .one .second .hid {
+    position: absolute;
+    top: -31px;
+    left: 150px;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    transition: all .4s linear;
+}
+
+.content .products .one .second .hid a {
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.content .products .one .second .hid .left {
+    width: 89px;
+    height: 30px;
+    color: #fff;
+    background-color: #3930d8;
+}
+
+.content .products .one .second .hid .right {
+    width: 56px;
+    height: 30px;
+    color: #2d2d2d;
+    background-color: #ECEFF5;
+}
+
+.content .products .one .second .hid .right::before {
+    font-family: 'icomoon';
+    content: '\e900';
+    margin-right: 2px;
+}
+
+.content .products .one .second>div:hover .hid {
+    top: 10px;
+}
+
+.content .products .one .second .hid .right:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3930d8;
+}
+
+.icon-1,
+.icon-2 {
+    position: relative;
+}
+
+.icon-1 {
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+.icon-hid-1,
+.icon-hid-2 {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    padding: 5px 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #989dad;
+    background-color: #30333c;
+}
+
+.content .products .one .third {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #4C5766;
+    font-size: 12px;
+}
+
+.content .products .one .third a {
+    display: block;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.content .products .one .third a:hover {
+    background-color: #3930d8;
+    color: #fff;
+}
+
+/* 产品products部分结束 */
+
+/* content右侧other部分开始 */
+
+.content .other {
+    margin-top: 70px;
+    width: 350px;
+    height: 1549px;
+}
+
+.content .other .ad {
+    position: relative;
+    width: 100%;
+    height: 277px;
+}
+
+.content .other .customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 2s;
+    width: 350px;
+    height: 655px;
+    background-color: #fff;
+}
+
+.content .other .corporation {
+    width: 100%;
+    height: 617px;
+}
+
+/* ad部分开始 */
+
+/* .content .other .ad .one {
+    width: 100%;
+    height: 177px;
+}
+
+.content .other .ad .two {
+    width: 100%;
+    height: 68px;
+}
+
+.content .other .ad .three {
+    width: 100%;
+    height: 32px;
+} */
+
+.content .other .ad img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .other .ad img:hover {
+    filter: saturate(150%);
+    /* 提高图片的亮度 */
+}
+
+.content .other .ad div {
+    position: absolute;
+    top: 0;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #00aecd;
+    background-color: #fff;
+}
+
+.content .other .ad div:hover {
+    cursor: pointer;
+}
+
+.content .other .ad .ad-word {
+    right: 24px;
+}
+
+.content .other .ad .ad-close {
+    right: 2px;
+    font-size: 26px;
+    font-weight: 340;
+}
+
+.content .other .ad .ad-close:hover {
+    background-color: #58585a;
+}
+
+.content .other .ad .ad-close:hover span {
+    color: #fff;
+}
+
+.content .other .ad .ad-close span {
+    display: block;
+    /* 转换为块级元素才能旋转 */
+    transform: rotate(45deg);
+}
+
+.content .other .ad .hid-ad {
+    display: none;
+    right: 48px;
+    border-bottom-left-radius: 6px;
+    color: #2d2d2d;
+    transition: all .5s;
+}
+
+/* ad部分结束 */
+
+/* customer部分开始 */
+
+.content .other .customer .one {
+    width: 306px;
+    height: 135px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content .other .customer .two {
+    display: flex;
+    justify-content: space-between;
+    width: 306px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.content .other .customer .three {
+    width: 306px;
+    height: 471px;
+}
+
+.content .other .customer .one h3 {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #434c5a;
+}
+
+.content .other .customer .one p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #4c5766;
+}
+
+.content .other .customer .one a {
+    display: block;
+    margin: 10px auto;
+    width: 98px;
+    height: 40px;
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #3930d8;
+}
+
+.content .other .customer .one a:hover {
+    background-color: #20438c;
+}
+
+.content .other .customer .two span {
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.content .other .customer .two a {
+    font-size: 14px;
+    color: #3930D8;
+}
+
+.content .other .customer .three ul {
+    margin-top: 25px;
+}
+
+.content .other .customer .three ul li {
+    position: relative;
+    /* 跟隐藏部分形成子绝父相 */
+    margin-bottom: 15px;
+    width: 306px;
+    height: 33px;
+}
+
+.content .other .customer .three ul li>img {
+    float: left;
+    /* 利用浮动实现文字环绕 */
+    margin-top: 5px;
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.content .other .customer .three ul li .pipi>a {
+    display: block;
+    margin-top: -2px;
+    padding-bottom: 10px;
+    color: #2D2D2D;
+    font-size: 13px;
+}
+
+.content .other .customer .three ul li>p {
+    margin-top: -6px;
+    font-size: 12px;
+    color: #4C576680;
+}
+
+/* customer 隐藏部分，鼠标经过时才显示 */
+
+/* js实现 */
+
+.content .other .customer .three ul li .pipi {
+    position: relative;
+}
+
+.content .other .customer .three ul li .hid {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    /* 不被其他盒子压住 */
+    top: 20px;
+    right: 100px;
+    width: 175px;
+    height: 182px;
+    box-shadow: 1px 1px 8px -3px;
+    /* 设置阴影效果 */
+    background-color: #fff;
+}
+
+.content .other .customer .three ul li .hid .img {
+    width: 100px;
+    height: 99px;
+    margin-bottom: 5px;
+}
+
+.content .other .customer .three ul li .hid .border {
+    margin-left: 5px;
+    border: 1px solid #3930D8;
+    border-bottom: none;
+    border-radius: 6px;
+}
+
+.content .other .customer .three ul li .hid p {
+    margin-top: 10px;
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+.content .other .customer .three ul li .hid a {
+    color: #3930D8;
+}
+
+.content .other .customer .three ul li .hid a:hover {
+    color: #2d2d2d;
+}
+
+/* customer部分结束 */
+
+.content .other .corporation {
+    background-color: #f4f6f9;
+}
+
+.content .other .corporation .media {
+    padding-top: 35px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: #2d2d2d;
+}
+
+.content .other .corporation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 525px;
+}
+
+.content .other .corporation ul li {
+    position: relative;
+    width: 350px;
+    height: 70px;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.content .other .corporation ul li img {
+    /* position: absolute; */
+    z-index: 0;
+    bottom: 0;
+    width: 350px;
+    height: 175px;
+}
+
+.content .other .corporation ul .big {
+    height: 175px;
+    ;
+}
+
+/* .content .other .corporation ul li img:hover {
+    z-index: 2;
+} */
+
+.content .other .corporation ul li p {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: -8px -28px 29px -13px rgba(0, 0, 0, .8) inset;
+}
+
+.content .other .corporation ul li:hover {
+    height: 175px;
+    background-color: red;
+}
+
+/* .content .other .corporation ul .last:hover {
+    overflow:visible;
+} */
+
+.content .other .corporation ul .first {
+    top: 0;
+}
+
+/* content右侧other部分结束 */
+
+/* content部分结束 */
+
+/* 6、work部分开始 */
+
+.work {
+    height: 336px;
+}
+
+.work .front-word a {
+    font-size: 24px;
+    color: #2d2d2d;
+}
+
+.work .big {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    width: 100%;
+    height: 296px;
+}
+
+.work .left {
+    width: 338px;
+    height: 296px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 1s;
+}
+
+/* 鼠标经过时有阴影出现 */
+
+.work .left:hover {
+    box-shadow: 2px 2px 30px -15px;
+}
+
+.work .left>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 338px;
+    height: 236px;
+}
+
+.work .big .left>div .big-picture {
+    width: 235px;
+    height: 236px;
+}
+
+.work .big .left>div .big-picture img {
+    width: 235px;
+    height: 236px;
+}
+
+.work .big .left>div div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    height: 236px;
+}
+
+.work .big .left>div div:last-child div {
+    width: 100px;
+    height: 117px;
+}
+
+.work .big .left>div div:last-child div img {
+    width: 100px;
+    height: 117px;
+}
+
+.work .left h3 {
+    padding-left: 8px;
+    padding-bottom: 6px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.work .left h3 a {
+    color: #2d2d2d;
+}
+
+.work .left h3 a:hover {
+    color: #3930d8;
+    text-decoration: underline;
+}
+
+.work .left p {
+    padding-left: 10px;
+    font-size: 12px;
+    color: #a2a8b1;
+}
+
+/* work部分结束 */
+
+/* 7、 hotword部分开始 */
+
+.hotword div {
+    margin: 65px 0 25px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.hotword ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 8px;
+    width: 100%;
+    height: 175px;
+}
+
+.hotword ul li a {
+    margin-right: 8px;
+    padding: 6px;
+    border-radius: 4px;
+    color: #a2a8b1;
+    font-size: 13px;
+    background-color: #f6f9fc;
+}
+
+.hotword ul li a:hover {
+    color: blue;
+}
+
+/* hotword部分结束 */
+
+/* 8、footer部分开始 */
+
+footer {
+    height: 420px;
+}
+
+/* 浮动，使Ul能沿着上沿对齐*/
+
+footer .clearfix ul {
+    float: left;
+    margin: 50px 45px 0 0;
+    height: 235px;
+}
+
+footer .clearfix ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer .clearfix li a {
+    color: #555;
+}
+
+footer .clearfix ul li a:hover {
+    color: #555;
+}
+
+footer .clearfix li:first-child {
+    margin-bottom: 22px;
+}
+
+footer .clearfix li:first-child a {
+    color: #2d2d2d;
+    font-size: 16px;
+}
+
+footer .link {
+    font-size: 14px;
+    color: #a2a8b1;
+}
+
+footer .link ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .link ul li {
+    margin-right: 8px;
+}
+
+footer .link ul li a {
+    color: #a2a8b1;
+}
+
+footer .link p:last-child {
+    margin-top: 8px;
+}
+
+/* footer部分结束 */
+
+/*9、 stick部分开始 */
+
+.stick1, .stick2 {
+    position: fixed;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    opacity: .8;
+    background-color: #dee5e9;
+}
+
+.stick1 {
+    top: 73%;
+    right: 2%;
+    font-size: 24px;
+}
+
+.stick2 {
+    top: 80%;
+    right: 2%;
+}
+
+.stick1::before {
+    font-family: 'icomoon';
+    content: '\e909';
+}
+
+.stick2::before {
+    font-family: 'icomoon';
+    content: '\e905';
+}
+
+.stick1:hover, .stick2:hover {
+    background-color: #3930d8;
+}
+
+/* stick部分结束 */
+
+/*10. 登录弹出框部分·开始 */
+
+.login {
+    display: none;
+    position: fixed;
+    z-index: 6;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 415px;
+    height: 400px;
+    border: 6px solid #3930d8;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.login>div {
+    margin: 30px 30px 0 30px;
+    width: 352px;
+    height: 332px;
+}
+
+.login p {
+    margin-bottom: 4px;
+    font-size: 26px;
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+.login span {
+    font-size: 12px;
+}
+
+.login .one, .login .three {
+    font-weight: 700;
+}
+
+.login .one, .login .three {
+    margin-right: 267px;
+}
+
+.login .two, .login .four {
+    color: #c7c7c9;
+}
+
+.login input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    color: #303030;
+    border: 2px solid #e0e0e1;
+    border-radius: 6px;
+}
+
+.login .denlu {
+    margin-bottom: 18px;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: #c62e46;
+}
+
+.login .five {
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.login .six {
+    font-weight: 700;
+    font-size: 12px;
+    color: #3930D8;
+}
+
+.login .six:hover {
+    color: #2d2d2d;
+    text-decoration: underline;
+}
+
+.login .qq {
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+}
+
+/* 关闭弹出框 */
+
+.close {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    opacity: .8;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+}
+
+.close::before {
+    font-family: 'icomoon';
+    content: '\e904';
+    color: #fff;
+}
+
+.login-bgc {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 1520px;
+    height: 11005px;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+/* 登录结束框结束 */
+body {
+    min-width: 1000px;
+}
