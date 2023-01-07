@@ -1,3 +1,8 @@
+import { animate, animateY } from './animate.js'
+import '../css/base.css'
+import '../css/common.css'
+import './other.js'
+
 
 /* 页面加载后再执行js文件 */
 window.addEventListener('load', function () {
@@ -32,7 +37,7 @@ window.addEventListener('load', function () {
             this.lastElementChild.style.display = 'none';
         })
     }
-    
+
     for (var i = 0; i < hidnav.length; i++) {
         for (var j = 0; j < hidnav[i].children.length; j++) {
             hidnav[i].children[j].addEventListener('mouseover', function () {
@@ -83,7 +88,7 @@ window.addEventListener('load', function () {
         }
         document.addEventListener('mousemove', move);
         // 鼠标弹起时拖动结束，即移除拖动事件
-        document.addEventListener('mouseup', function () { 
+        document.addEventListener('mouseup', function () {
             login.style.cursor = 'default';
             document.removeEventListener('mousemove', move);
         })
@@ -143,7 +148,6 @@ window.addEventListener('load', function () {
         })
     }
     // customer部分中点击用户名字可以显示基本信息部分结束
-
 
     // 轮播图制作
     // 获取对象
