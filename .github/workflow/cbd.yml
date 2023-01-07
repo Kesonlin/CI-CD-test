@@ -2,7 +2,7 @@ name: CBD
 on:
   push:
     branches:
-      - main
+      - gh-pages
 jobs:
   cbd:
     name: doc cbd
