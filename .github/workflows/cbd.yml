@@ -9,7 +9,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
+            - name: install node
+              uses: actions/setup-node@v3
                 with:
                     node-version: 16
             - name: pnpm
