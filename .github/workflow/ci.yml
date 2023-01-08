@@ -2,7 +2,7 @@ name: Ci
 on:
     push:
         branches:
-            - master
+            - gh-pages
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
             - name: Build and Deploy
               uses: JamesIves/github-pages-deploy-action@master
               env:
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  ACCESS_TOKEN: ${{ secrets.CICD }}
                   BRANCH: gh-pages
                   FOLDER: build
                   BUILD_SCRIPT: npm install && npm run build
