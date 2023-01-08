@@ -9,10 +9,15 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2
-            - name: test
-              run: npm install
+            - uses: actions/setup-node@v3
+                with:
+                    node-version: 16
+            - name: pnpm
+              run: npm install pnpm -g
+            - name: install
+              run: pnpm install
             - name: Build
-              run: npm run build
+              run: pnpm run build
             - name: DeployGP
               uses: peaceiris/actions-gh-pages@v3
               with:
