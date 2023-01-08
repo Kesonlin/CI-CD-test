@@ -1,6 +1,6 @@
 name: CBD
 on:
-    push: [push]
+    push: [gh-pages]
 jobs:
     cbd:
         name: doc cbd
