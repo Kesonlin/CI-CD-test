@@ -10,7 +10,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
             - name: test
-              run: pnpm run lint
+              run: npm install & npm run lint
             - name: Build
               run: pnpm run build
             - name: DeployGP
